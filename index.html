@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"
+            integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH"
+            crossorigin="anonymous"
+        />
+        <title>Listagem de medias</title>
+    </head>
+    <body>
+        <h1>Listagem de médias</h1>
+
+        <div id="tabela">
+            <table id="table" class="pure-table pure-table-bordered">
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Nota1</td>
+                        <td>Nota2</td>
+                        <td>Média</td>
+                        <td>Situação</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="form">
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    placeholder="Nome completo"
+                    name="nome"
+                    id="nome"
+                />
+                <label for="nota1">Nota 1:</label>
+                <input
+                    type="number"
+                    placeholder="Digite a nota 1"
+                    name="nota1"
+                    id="nota1"
+                />
+                <label for="nota2">Nota 2:</label>
+                <input
+                    type="number"
+                    placeholder="Digite a nota 2"
+                    name="nota2"
+                    id="nota2"
+                />
+
+                <button onclick="calcularMedia()">Calcular média</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
